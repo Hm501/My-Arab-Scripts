@@ -1,0 +1,6 @@
+if game.PlaceId == 11161846807 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Shaleh%20Rob'))()
+   elseif game.PlaceId == 1575090225 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Shaleh%20M7md'))()
+end
+setclipboard("Hussien#5033")
