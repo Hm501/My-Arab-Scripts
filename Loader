@@ -4,5 +4,13 @@ if game.PlaceId == 11161846807 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Shaleh%20M7md'))()
     elseif game.PlaceId == 15921895690 then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Saudi%20World'))()
+    elseif game.PlaceId == 335760407 then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Scripts/refs/heads/main/Street%20Soccer'))()
+    else
+     StarterGui:SetCore("SendNotification", {
+        Title = "خطأ";
+        Text = "الماب غير مدعوم حاليا";
+        Duration = 5
+    })
 end
 setclipboard("Hussien#5033")
