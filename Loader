@@ -1,16 +1,21 @@
-if game.PlaceId == 11161846807 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Shaleh%20Rob'))()
-   elseif game.PlaceId == 1575090225 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Shaleh%20M7md'))()
-    elseif game.PlaceId == 15921895690 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Saudi%20World'))()
-    elseif game.PlaceId == 335760407 then
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Scripts/refs/heads/main/Street%20Soccer'))()
+local URLS = {
+    [11161846807] = 'https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Shaleh%20Rob',
+    [1575090225] = 'https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Shaleh%20M7md',
+    [15921895690] = 'https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Saudi%20World',
+    [335760407] = 'https://raw.githubusercontent.com/Hm501/My-Scripts/refs/heads/main/Street%20Soccer',
+    [17117046509] = 'https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Find%20The%20Famous',
+}
+function LoadScript(placeId)
+    local scriptUrl = URLS[placeId]
+    if scriptUrl then
+        loadstring(game:HttpGet(scriptUrl))()
     else
-     StarterGui:SetCore("SendNotification", {
-        Title = "خطأ";
-        Text = "الماب غير مدعوم حاليا";
-        Duration = 5
-    })
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+            Title = "خطأ";
+            Text = "الماب غير مدعوم حاليا";
+            Duration = 5
+        })
+    end
 end
+LoadScript(game.PlaceId)
 setclipboard("Hussien#5033")
