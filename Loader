@@ -4,6 +4,7 @@ local URLS = {
     [15921895690] = 'https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Saudi%20World',
     [335760407] = 'https://raw.githubusercontent.com/Hm501/My-Scripts/refs/heads/main/Street%20Soccer',
     [17117046509] = 'https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Find%20The%20Famous',
+    [17723040340] = 'https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/tjm3%20al3rb',
 }
 function LoadScript(placeId)
     local scriptUrl = URLS[placeId]
