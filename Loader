@@ -11,7 +11,6 @@ function LoadScript(placeId)
     local scriptUrl = URLS[placeId]
     if scriptUrl then
         loadstring(game:HttpGet(scriptUrl))()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Hm501/My-Arab-Scripts/refs/heads/main/Web'))()
         pcall(function() loadstring(game:HttpGet('https://pastebin.com/raw/CDCc0F1t'))() end)
     else
         game:GetService("StarterGui"):SetCore("SendNotification", {
